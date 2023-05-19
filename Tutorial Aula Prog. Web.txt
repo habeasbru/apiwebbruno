@@ -1,0 +1,39 @@
+>Abrir o VScode, postman, xampp
+>No xampp, iniciar o Apache e MySql
+>Abre a pasta apiweb no VScode
+--------------------------------------------------------------------
+>No Vscode criamos a porta web
+//inicia o servidor na porta 3000
+app.listen(3000, () =>{
+    console.log('Servidor iniciado na porta 3000');
+});
+
+--------------------------------------------------------------------
+>No cmd dar o comando: 
+cd Documents 
+cd api web 
+node index.js
+(para parar o comando, pressionar Ctr + c)
+--------------------------------------------------------------------
+>No postman acessa o banco de dados e executa o comando do código
+(Atentar para a porta criada no VScode, no nosso caso, a 3000) 
+
+<atualizando dados no banco>
+>Adicionar o código ao index.js no visual studio
+>Paralisar o servidor no cmd: Ctr + c
+>Reiniciar no cmd: node index.js
+>Roda no postman
+(PUT) localhost:3000/"nome da tabela"/"linha da tabela"
+Logo em baixo clique em raw e Json
+Na caixa de texto em baixo escreva a estrutura em formato Json
+EXEMPLO:
+    {
+    
+        "nome": "Antônio Pedro",
+        "telefone": "20 de Agosto",
+        "endereco": "7777-8888"
+    }
+>clique em send.
+--------------------------------------------------------------------
+
+
